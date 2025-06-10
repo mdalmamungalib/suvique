@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Suvique</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <p>Free Shipping on Orders Over $150</p>
+    </div>
+
+    <!-- Navbar Start-->
+    <div class="navbar">
+      <div class="resButton">
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+        >
+          &#9776;
+        </button>
+        <div class="logo-black">
+          <img src="/assets/logo-black.png" alt="Logo" />
+        </div>
+      </div>
+
+      <div class="logo-white">
+        <img src="/assets/logo-white.png" alt="Logo" />
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>NEW IN</li>
+          <li>SHOP ALL</li>
+          <li>BRANDS</li>
+          <li>HAIR CARE</li>
+          <li>BODY CARE</li>
+          <li>SKINCARE</li>
+        </ul>
+      </div>
+
+      <div class="icons">
+        <ul>
+          <li>
+            <!-- Heart Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733C11.285 4.876 9.623 3.75 7.687 3.75 5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              />
+            </svg>
+          </li>
+          <li>
+            <!-- User Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+          </li>
+          <li>
+            <!-- Shopping Bag Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5M4.25 7.5h15.5l1.263 12a1.125 1.125 0 0 1-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243L4.25 7.5Z"
+              />
+            </svg>
+          </li>
+          <li>
+            <!-- Search Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197M15.803 15.803A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Overlay & Side Menu -->
+    <div id="overlay"></div>
+    <aside id="sideMenu">
+      <button id="closeBtn">&times;</button>
+      <nav>
+        <ul>
+          <li>NEW IN</li>
+          <li>SHOP ALL</li>
+          <li>BRANDS</li>
+          <li>HAIR CARE</li>
+          <li>BODY CARE</li>
+          <li>SKINCARE</li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Navbar Closed-->
+    <!-- Swiper Start -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img
+            src="/assets/Banner/abda6330d1aec536ae7192582320f5e6560d977d.png"
+            alt="Banner"
+          />
+          <div class="slide-content">
+            <p>99.5% NATURAL. 100% YOU.</p>
+            <h2>
+              Glow from <br />
+              Within, Naturally
+            </h2>
+            <a href="#shop" class="btn"
+              >Shop Now
+              <span class="su-arrow-angle"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg> </span
+            ></a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="/assets/Banner/banner-2.jpg" alt="Banner" />
+          <div class="slide-content">
+            <p>99.5% NATURAL. 100% YOU.</p>
+            <h2>
+              Glow from <br />
+              Within, Naturally
+            </h2>
+            <a href="#shop" class="btn"
+              >Shop Now
+              <span class="su-arrow-angle"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg> </span
+            ></a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="/assets/Banner/logo-black.png" alt="Logo" />
+          <div class="slide-content">
+            <p>Limited Edition</p>
+            <h2>SPRING/SUMMER 2024</h2>
+            <a href="#shop" class="btn"
+              >Shop Now
+              <span class="su-arrow-angle"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg> </span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper Closed -->
+
+    <!-- My love start -->
+    <div class="myLove">
+      <div class="myLove-hed">
+        <h3>YOU MAY LOVE</h3>
+        <a href="#shop" class="btn"
+          >View All
+          <span class="su-arrow-angle"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg> </span
+        ></a>
+      </div>
+      <div class="grid-card">
+        <!-- card-1 -->
+        <div class="myLove-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-hed">
+                <div
+                  class="card-svg"
+                  role="button"
+                  aria-label="Add to wishlist"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.36768 1.31616C8.89308 1.31671 8.42364 1.41449 7.98829 1.60346C7.55295 1.79244 7.16093 2.0686 6.83643 2.41491C6.36087 1.90737 5.74373 1.55451 5.0651 1.40213C4.38648 1.24976 3.67772 1.30491 3.03083 1.56043C2.38395 1.81595 1.82882 2.26004 1.4375 2.83504C1.04619 3.41003 0.836768 4.08939 0.836426 4.78491C0.836426 8.23866 6.40705 11.6287 6.64893 11.7618C6.70725 11.7968 6.77401 11.8153 6.84205 11.8153C6.91009 11.8153 6.97685 11.7968 7.03518 11.7618C7.2658 11.6287 12.8364 8.23866 12.8364 4.78491C12.8354 3.86525 12.4697 2.98353 11.8194 2.33323C11.1691 1.68293 10.2873 1.31715 9.36768 1.31616ZM6.83643 10.9987C5.86705 10.3799 1.58643 7.48866 1.58643 4.78491C1.58691 4.2074 1.77127 3.64505 2.1128 3.17935C2.45434 2.71365 2.93529 2.3688 3.48596 2.19479C4.03663 2.02077 4.6284 2.02663 5.17552 2.2115C5.72264 2.39638 6.19667 2.75067 6.52893 3.22304C6.56354 3.27217 6.60946 3.31227 6.66281 3.33994C6.71616 3.36762 6.77539 3.38206 6.83549 3.38206C6.89559 3.38206 6.95481 3.36762 7.00817 3.33994C7.06152 3.31227 7.10744 3.27217 7.14205 3.22304C7.47403 2.74986 7.94817 2.3948 8.49565 2.2094C9.04312 2.02401 9.63544 2.01792 10.1866 2.19203C10.7378 2.36614 11.2191 2.71138 11.5607 3.17764C11.9024 3.64389 12.0865 4.20689 12.0864 4.78491C12.0864 7.48679 7.8058 10.378 6.83643 10.9987Z"
+                      fill="#1D1D1D"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-body-image">
+                <img
+                  src="/assets/MyLove/7d6805555aaa18b58b3d10145dd7461e23020a8b.png"
+                  alt="Radiant Shield Day Cream"
+                />
+              </div>
+              <div class="add-btn-body">
+                <div class="add-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.0793 13.625H4.25427C2.81052 13.625 1.62927 12.4438 1.62927 11V10.9125L1.89177 3.9125C1.93552 2.46875 3.11677 1.375 4.51677 1.375H10.8168C12.2168 1.375 13.398 2.46875 13.4418 3.9125L13.7043 10.9125C13.748 11.6125 13.4855 12.2688 13.0043 12.7937C12.523 13.3188 11.8668 13.625 11.1668 13.625C11.1668 13.625 11.123 13.625 11.0793 13.625ZM4.51677 2.25C3.55427 2.25 2.81052 2.99375 2.76677 3.9125L2.50427 11C2.50427 11.9625 3.29177 12.75 4.25427 12.75H11.1668C11.648 12.75 12.0855 12.5312 12.3918 12.1813C12.698 11.8313 12.873 11.3937 12.873 10.9125L12.6105 3.9125C12.5668 2.95 11.823 2.25 10.8605 2.25H4.51677Z"
+                      fill="#221F17"
+                    />
+                    <path
+                      d="M7.66675 6.625C5.9605 6.625 4.60425 5.26875 4.60425 3.5625C4.60425 3.3 4.77925 3.125 5.04175 3.125C5.30425 3.125 5.47925 3.3 5.47925 3.5625C5.47925 4.7875 6.44175 5.75 7.66675 5.75C8.89175 5.75 9.85425 4.7875 9.85425 3.5625C9.85425 3.3 10.0292 3.125 10.2917 3.125C10.5542 3.125 10.7292 3.3 10.7292 3.5625C10.7292 5.26875 9.373 6.625 7.66675 6.625Z"
+                      fill="#221F17"
+                    />
+                  </svg>
+                  <p>QUICK ADD</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Time Miracle</p>
+              <h4>Radiant Shield Day Cream SPF15</h4>
+              <p>$3,335.00</p>
+            </div>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="myLove-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-hed">
+                <div
+                  class="card-svg"
+                  role="button"
+                  aria-label="Add to wishlist"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.36768 1.31616C8.89308 1.31671 8.42364 1.41449 7.98829 1.60346C7.55295 1.79244 7.16093 2.0686 6.83643 2.41491C6.36087 1.90737 5.74373 1.55451 5.0651 1.40213C4.38648 1.24976 3.67772 1.30491 3.03083 1.56043C2.38395 1.81595 1.82882 2.26004 1.4375 2.83504C1.04619 3.41003 0.836768 4.08939 0.836426 4.78491C0.836426 8.23866 6.40705 11.6287 6.64893 11.7618C6.70725 11.7968 6.77401 11.8153 6.84205 11.8153C6.91009 11.8153 6.97685 11.7968 7.03518 11.7618C7.2658 11.6287 12.8364 8.23866 12.8364 4.78491C12.8354 3.86525 12.4697 2.98353 11.8194 2.33323C11.1691 1.68293 10.2873 1.31715 9.36768 1.31616ZM6.83643 10.9987C5.86705 10.3799 1.58643 7.48866 1.58643 4.78491C1.58691 4.2074 1.77127 3.64505 2.1128 3.17935C2.45434 2.71365 2.93529 2.3688 3.48596 2.19479C4.03663 2.02077 4.6284 2.02663 5.17552 2.2115C5.72264 2.39638 6.19667 2.75067 6.52893 3.22304C6.56354 3.27217 6.60946 3.31227 6.66281 3.33994C6.71616 3.36762 6.77539 3.38206 6.83549 3.38206C6.89559 3.38206 6.95481 3.36762 7.00817 3.33994C7.06152 3.31227 7.10744 3.27217 7.14205 3.22304C7.47403 2.74986 7.94817 2.3948 8.49565 2.2094C9.04312 2.02401 9.63544 2.01792 10.1866 2.19203C10.7378 2.36614 11.2191 2.71138 11.5607 3.17764C11.9024 3.64389 12.0865 4.20689 12.0864 4.78491C12.0864 7.48679 7.8058 10.378 6.83643 10.9987Z"
+                      fill="#1D1D1D"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-body-image">
+                <img
+                  src="/assets/MyLove/77a1237d4adde17b73b346881a8e85cc680489cc.png"
+                  alt="Radiant Shield Day Cream"
+                />
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Time Miracle</p>
+              <h4>Radiant Shield Day Cream SPF15</h4>
+              <p>$3,335.00</p>
+            </div>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="myLove-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-hed">
+                <div
+                  class="card-svg"
+                  role="button"
+                  aria-label="Add to wishlist"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.36768 1.31616C8.89308 1.31671 8.42364 1.41449 7.98829 1.60346C7.55295 1.79244 7.16093 2.0686 6.83643 2.41491C6.36087 1.90737 5.74373 1.55451 5.0651 1.40213C4.38648 1.24976 3.67772 1.30491 3.03083 1.56043C2.38395 1.81595 1.82882 2.26004 1.4375 2.83504C1.04619 3.41003 0.836768 4.08939 0.836426 4.78491C0.836426 8.23866 6.40705 11.6287 6.64893 11.7618C6.70725 11.7968 6.77401 11.8153 6.84205 11.8153C6.91009 11.8153 6.97685 11.7968 7.03518 11.7618C7.2658 11.6287 12.8364 8.23866 12.8364 4.78491C12.8354 3.86525 12.4697 2.98353 11.8194 2.33323C11.1691 1.68293 10.2873 1.31715 9.36768 1.31616ZM6.83643 10.9987C5.86705 10.3799 1.58643 7.48866 1.58643 4.78491C1.58691 4.2074 1.77127 3.64505 2.1128 3.17935C2.45434 2.71365 2.93529 2.3688 3.48596 2.19479C4.03663 2.02077 4.6284 2.02663 5.17552 2.2115C5.72264 2.39638 6.19667 2.75067 6.52893 3.22304C6.56354 3.27217 6.60946 3.31227 6.66281 3.33994C6.71616 3.36762 6.77539 3.38206 6.83549 3.38206C6.89559 3.38206 6.95481 3.36762 7.00817 3.33994C7.06152 3.31227 7.10744 3.27217 7.14205 3.22304C7.47403 2.74986 7.94817 2.3948 8.49565 2.2094C9.04312 2.02401 9.63544 2.01792 10.1866 2.19203C10.7378 2.36614 11.2191 2.71138 11.5607 3.17764C11.9024 3.64389 12.0865 4.20689 12.0864 4.78491C12.0864 7.48679 7.8058 10.378 6.83643 10.9987Z"
+                      fill="#1D1D1D"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-body-image">
+                <img
+                  src="/assets/MyLove/7d6805555aaa18b58b3d10145dd7461e23020a8b.png"
+                  alt="Radiant Shield Day Cream"
+                />
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Time Miracle</p>
+              <h4>Radiant Shield Day Cream SPF15</h4>
+              <p>$3,335.00</p>
+            </div>
+          </div>
+        </div>
+        <!-- card-4 -->
+        <div class="myLove-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-hed">
+                <div
+                  class="card-svg"
+                  role="button"
+                  aria-label="Add to wishlist"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.36768 1.31616C8.89308 1.31671 8.42364 1.41449 7.98829 1.60346C7.55295 1.79244 7.16093 2.0686 6.83643 2.41491C6.36087 1.90737 5.74373 1.55451 5.0651 1.40213C4.38648 1.24976 3.67772 1.30491 3.03083 1.56043C2.38395 1.81595 1.82882 2.26004 1.4375 2.83504C1.04619 3.41003 0.836768 4.08939 0.836426 4.78491C0.836426 8.23866 6.40705 11.6287 6.64893 11.7618C6.70725 11.7968 6.77401 11.8153 6.84205 11.8153C6.91009 11.8153 6.97685 11.7968 7.03518 11.7618C7.2658 11.6287 12.8364 8.23866 12.8364 4.78491C12.8354 3.86525 12.4697 2.98353 11.8194 2.33323C11.1691 1.68293 10.2873 1.31715 9.36768 1.31616ZM6.83643 10.9987C5.86705 10.3799 1.58643 7.48866 1.58643 4.78491C1.58691 4.2074 1.77127 3.64505 2.1128 3.17935C2.45434 2.71365 2.93529 2.3688 3.48596 2.19479C4.03663 2.02077 4.6284 2.02663 5.17552 2.2115C5.72264 2.39638 6.19667 2.75067 6.52893 3.22304C6.56354 3.27217 6.60946 3.31227 6.66281 3.33994C6.71616 3.36762 6.77539 3.38206 6.83549 3.38206C6.89559 3.38206 6.95481 3.36762 7.00817 3.33994C7.06152 3.31227 7.10744 3.27217 7.14205 3.22304C7.47403 2.74986 7.94817 2.3948 8.49565 2.2094C9.04312 2.02401 9.63544 2.01792 10.1866 2.19203C10.7378 2.36614 11.2191 2.71138 11.5607 3.17764C11.9024 3.64389 12.0865 4.20689 12.0864 4.78491C12.0864 7.48679 7.8058 10.378 6.83643 10.9987Z"
+                      fill="#1D1D1D"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-body-image">
+                <img
+                  src="/assets/MyLove/f5c9b8c33a608568f353947bfb6148f03de1ec53.png"
+                  alt="Radiant Shield Day Cream"
+                />
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Time Miracle</p>
+              <h4>Radiant Shield Day Cream SPF15</h4>
+              <p>$3,335.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- My love Closed -->
+
+    <!-- JavaScript -->
+    <!-- sidebar -->
+    <script src="/Javascript/humberg.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>

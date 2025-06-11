@@ -41,7 +41,7 @@ h3 {
 
 /* Navbar */
 .navbar {
-  position: fixed; /* Use fixed for consistent sticky behavior */
+  position: fixed;
 
   width: 100%;
   z-index: 1101;
@@ -53,8 +53,8 @@ h3 {
   padding: 40px 20px;
   color: #f9f9f9;
 
-  background-color: transparent; /* start fully transparent */
-  opacity: 1; /* we’ll keep text visible with transparent bg */
+  background-color: transparent;
+  opacity: 1;
   transition: background-color 0.4s ease-in-out;
   user-select: none;
 }
@@ -62,7 +62,7 @@ h3 {
 .navbar.scrolled {
   top: 0;
   left: 0;
-  background-color: #000; /* solid black on scroll */
+  background-color: #000;
 }
 
 .resButton {
@@ -207,6 +207,12 @@ h3 {
     padding: 0;
     background-color: #f9f9f9;
     color: #282830;
+  }
+
+  .navbar.scrolled {
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9;
   }
 
   .resButton {
@@ -448,6 +454,13 @@ h3 {
   max-width: 390px;
 }
 
+.card .add-btn-body {
+  display: none;
+}
+.card:hover .add-btn-body {
+  display: block;
+}
+
 .card-body {
   background: #f5f5f5;
 }
@@ -479,17 +492,21 @@ h3 {
 .card-body img {
   max-width: 380px;
   min-height: 390px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  mix-blend-mode: darken;
 }
 
 .add-btn-body {
   display: flex;
   justify-items: center;
   align-items: center;
+  padding-bottom: 8px;
+  width: 100%;
 }
 
 .add-btn {
   display: flex;
-  width: 370px;
+  width: calc(100% - 15px);
   height: 51px;
   padding: 22px 35px;
   justify-content: center;
@@ -498,6 +515,7 @@ h3 {
   flex-shrink: 0;
   background: #fff;
   backdrop-filter: blur(5px);
+  cursor: pointer;
 }
 
 .add-btn p {
@@ -556,7 +574,8 @@ h3 {
   .card-body img {
     max-width: 100%;
     min-height: 300px;
-    padding-bottom: 40px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    mix-blend-mode: darken;
   }
 
   .myLove-hed {
@@ -579,7 +598,8 @@ h3 {
 
   .card-body img {
     min-height: 260px;
-    padding-bottom: 30px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    mix-blend-mode: darken;
   }
 
   .card-footer h4 {
@@ -598,7 +618,8 @@ h3 {
 
   .card-body img {
     min-height: 220px;
-    padding-bottom: 20px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    mix-blend-mode: darken;
   }
 
   .myLove-hed .btn {
@@ -615,3 +636,548 @@ h3 {
     height: 16px;
   }
 }
+/* My Love Closed */
+
+/* Award-winning Start */
+
+.award-winning {
+  margin-top: 160px;
+}
+.award-winning h3 {
+  color: #221f17;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Marcellus SC";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px; /* 175% */
+  text-transform: uppercase;
+}
+.award-winning h3 span {
+  color: #b38b44;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Marcellus SC";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.award-winning-body {
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+  background: #faf7f5;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.award-winning-img img {
+  width: 972px;
+  height: auto;
+  max-width: 100%;
+}
+
+.award-winning-card {
+  width: 960px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.winning-card {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--White, #fff);
+}
+
+@media (min-width: 1200px) {
+  .award-winning-body {
+    flex-wrap: nowrap; /* on large devices, keep items side by side */
+  }
+}
+
+@media (max-width: 391px) {
+  .award-winning-card {
+    padding: 10px 10px;
+  }
+}
+
+/* Award-winning Closed */
+
+/* MORNING ROUTINE Start */
+.winning-card-content {
+  padding: 20px;
+}
+
+.winning-card-content p {
+  color: #221f17;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Jost, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.winning-card-content h4 {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  color: #221f17;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Marcellus SC", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.winning-card-btn {
+  width: 210px;
+  display: flex;
+  padding: 20px 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #221f17;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.winning-card-btn:hover {
+  background: #000;
+}
+
+.winning-card-btn p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.26px;
+}
+
+.winning-card-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .winning-card-content {
+    padding: 30px;
+  }
+  .winning-card-content h4 {
+    font-size: 40px;
+    line-height: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .winning-card-content {
+    padding: 40px 60px;
+  }
+  .winning-card-content h4 {
+    font-size: 48px;
+    line-height: 80px;
+  }
+}
+
+/* MORNING ROUTINE Closed */
+
+/* Shop by Collection Start */
+.collection-container {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.image-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  margin-top: 42px;
+}
+
+.image-card > div {
+  position: relative;
+  max-width: 394px;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.collection-container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+button {
+  display: flex;
+  width: 90%;
+  max-width: 353px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+button p {
+  color: #221f17;
+  text-align: center;
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+/* Shop by Collection Closed */
+
+/* after before Start */
+.after-before-hed {
+  margin-top: 140px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.before-after-container {
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  height: 790px;
+  margin: 40px auto;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  touch-action: none;
+}
+
+.comparison-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.after-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  will-change: width;
+}
+
+/* Slider line */
+.slider-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 15;
+  will-change: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider button */
+.slider-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: #221f17;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: ew-resize;
+  z-index: 20;
+  will-change: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-button:active,
+.slider-button:focus {
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.slider-button .line {
+  background: #fff;
+  width: 2px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+/* Labels container */
+.labels-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.label {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.26px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.before-label {
+  left: 20px;
+}
+
+.after-label {
+  right: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .before-after-container {
+    height: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  .before-after-container {
+    height: 500px;
+  }
+
+  .slider-button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .before-after-container {
+    height: 400px;
+    margin: 30px auto;
+  }
+
+  .slider-button {
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+  }
+
+  .slider-button .line {
+    height: 16px;
+  }
+
+  .label {
+    font-size: 11px;
+    padding: 6px 12px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .before-after-container {
+    height: 300px;
+  }
+
+  .slider-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slider-button .line {
+    height: 12px;
+    width: 1.5px;
+  }
+
+  .label {
+    font-size: 10px;
+    padding: 4px 8px;
+    bottom: 10px;
+  }
+
+  .before-label {
+    left: 10px;
+  }
+
+  .after-label {
+    right: 10px;
+  }
+}
+
+/* after before Closed */
+
+/* Brand Start */
+/* Brand Carousel */
+.brand-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1900px;
+  margin: 105px auto;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.brand-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  will-change: transform;
+}
+
+.brand-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brand-slide img {
+  width: 100%;
+  max-width: 150px;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.brand-slide:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 30px));
+    /* 50% + half of gap */
+  }
+}
+
+/* Pause on hover */
+.brand-carousel:hover .brand-track {
+  animation-play-state: paused;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .brand-track {
+    gap: 50px;
+  }
+
+  .brand-slide img {
+    height: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .brand-track {
+    gap: 40px;
+    animation-duration: 25s;
+  }
+
+  .brand-slide img {
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-carousel {
+    padding: 15px 0;
+    margin: 105px auto;
+  }
+
+  .brand-track {
+    gap: 30px;
+    animation-duration: 20s;
+  }
+
+  .brand-slide img {
+    height: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-track {
+    gap: 25px;
+    animation-duration: 18s;
+  }
+
+  .brand-slide img {
+    height: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-track {
+    gap: 20px;
+  }
+
+  .brand-slide img {
+    height: 16px;
+  }
+}
+/* Brand Closed */
+
+/* customer-review Start */
+.customer-review {
+  display: flex;
+  width: 1920px;
+  padding: 160px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: #f3ebe1;
+}
+/* customer-review Closed */
